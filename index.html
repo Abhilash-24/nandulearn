@@ -11,10 +11,6 @@
         <nav id="sidebar" class="sidebar">
             <div class="sidebar-header">
                 <h2>LearnSphere</h2>
-                <label class="dark-mode-toggle" style="display:flex; align-items:center; gap:0.5rem; cursor:pointer;">
-                    <input type="checkbox" id="darkModeToggle" />
-                    <span>Dark Mode</span>
-                </label>
             </div>
             <ul class="nav-list">
                 <li><a href="#ai-tutor" class="nav-item" title="AI Tutor Bots"><span class="icon">🤖</span><span class="nav-text">AI Tutor Bots</span></a></li>
@@ -31,14 +27,9 @@
                         </select>
                     </label>
                 </li>
-                <li><a href="#local-history" class="nav-item" title="Local History & Heritage"><span class="icon">🏛️</span><span class="nav-text">Local History</span></a></li>
                 <li><a href="#quizzes" class="nav-item" title="Quizzes & Leaderboards"><span class="icon">📝</span><span class="nav-text">Quizzes</span></a></li>
-                <li><a href="#assignments" class="nav-item" title="Assignment Tools"><span class="icon">📚</span><span class="nav-text">Assignments</span></a></li>
                 <li><a href="#study-timers" class="nav-item" title="Study Timers"><span class="icon">⏲️</span><span class="nav-text">Study Timers</span></a></li>
-                <li><a href="#projects" class="nav-item" title="Project Resources"><span class="icon">📁</span><span class="nav-text">Projects</span></a></li>
-                <li><a href="#dashboard" class="nav-item" title="Dashboard & Reminders"><span class="icon">📒</span><span class="nav-text">Dashboard</span></a></li>
-                <li><a href="#cultural-exchange" class="nav-item" title="Cultural Exchange"><span class="icon">🤝</span><span class="nav-text">Cultural Exchange</span></a></li>
-            <li><a href="#ecommerce" class="nav-item" title="E-commerce"><span class="icon">🛒</span><span class="nav-text">E-commerce</span></a></li>
+                <li><a href="#dashboard" class="nav-item" title="Dashboard & Reminders"><span class="icon">📒</span><span class="nav-text">Dashboard</span></a></li>   
             <li><a href="https://www.youtube.com" target="_blank" class="nav-item" title="YouTube"><span class="icon"><img src="https://upload.wikimedia.org/wikipedia/commons/b/b8/YouTube_Logo_2017.svg" alt="YouTube" style="width:30%; height:40px; vertical-align:middle;"></span><span class="nav-text">YouTube</span></a></li>
             <li><a href="https://www.google.com" target="_blank" class="nav-item" title="Google"><span class="icon"><img src="https://upload.wikimedia.org/wikipedia/commons/2/2f/Google_2015_logo.svg" alt="Google" style="width:30px; height:40px; vertical-align:middle;"></span><span class="nav-text">Google</span></a></li>
         </ul>
@@ -100,48 +91,16 @@
         </ul>
     </div>
 </section>
-<section id="local-history">
-    <h2>Local History & Heritage Education</h2>
-    <p>Learn about your local culture and heritage.</p>
-    <div class="heritage-info">
-        <h3>Heritage Places of Karnataka</h3>
-        <p>Karnataka is rich in cultural heritage with numerous historical sites and monuments. Some notable heritage places include:</p>
-        <ul>
-            <li><strong>Hampi:</strong> A UNESCO World Heritage Site, known for its ruins of the Vijayanagara Empire.</li>
-            <li><strong>Mysore Palace:</strong> A magnificent palace and a major tourist attraction in Mysore.</li>
-            <li><strong>Badami Caves:</strong> Rock-cut cave temples famous for their architecture and sculptures.</li>
-            <li><strong>Belur and Halebidu:</strong> Renowned for their exquisite Hoysala architecture.</li>
-            <li><strong>Sravanabelagola:</strong> Famous for the giant monolithic statue of Gomateshwara Bahubali.</li>
-        </ul>
-        <h3>Other Heritage Places</h3>
-        <p>India and the world have many other heritage sites worth exploring:</p>
-        <ul>
-            <li><strong>Taj Mahal:</strong> Iconic white marble mausoleum in Agra, India.</li>
-            <li><strong>Ajanta and Ellora Caves:</strong> Ancient rock-cut caves with beautiful murals and sculptures.</li>
-            <li><strong>Khajuraho Temples:</strong> Famous for their intricate erotic sculptures.</li>
-            <li><strong>Great Wall of China:</strong> Historic fortification stretching across northern China.</li>
-            <li><strong>Machu Picchu:</strong> Ancient Incan city located in Peru.</li>
-        </ul>
-    </div>
-</section>
 <section id="quizzes">
-    <h2>Quizzes & Leaderboards</h2>
-    <p>Interactive quizzes with competitive leaderboards.</p>
+    <h2>Quizzes</h2>
+    <p>Interactive quizzes.</p>
     <div class="quiz-container">
         <div id="quiz-question" class="quiz-question"></div>
         <ul id="quiz-options" class="quiz-options"></ul>
         <button id="next-question-btn" disabled>Next Question</button>
         <div id="quiz-result" class="quiz-result"></div>
     </div>
-    <div class="leaderboard-container">
-        <h3>Leaderboard</h3>
-        <ol id="leaderboard-list" class="leaderboard-list"></ol>
-    </div>
 </section>
-            <section id="assignments">
-                <h2>Assignment Tools</h2>
-                <p>Tools to manage and submit assignments efficiently.</p>
-            </section>
 <section id="study-timers">
     <h2>Study Timers</h2>
     <p>Timers to help you stay focused and manage study sessions.</p>
@@ -152,17 +111,6 @@
             <button id="pause-btn" disabled>Pause</button>
             <button id="reset-btn" disabled>Reset</button>
         </div>
-    </div>
-</section>
-<section id="projects">
-    <h2>Project Resources</h2>
-    <p>Resources and tools for managing projects.</p>
-    <div class="projects-container">
-        <form id="resource-form" class="resource-form">
-            <input type="text" id="resource-input" placeholder="Enter project resource name..." required />
-            <button type="submit">Add Resource</button>
-        </form>
-        <ul id="resource-list" class="resource-list"></ul>
     </div>
 </section>
 <section id="dashboard">
@@ -178,76 +126,6 @@
         <ul id="task-list" class="task-list"></ul>
     </div>
 </section>
-            <section id="cultural-exchange">
-                <h2>Cultural Exchange Programs</h2>
-                <p>Connect globally and share cultural experiences.</p>
-            </section>
-<section id="ecommerce">
-    <h2>E-commerce for Educational Materials</h2>
-    <p>Buy and sell educational resources and materials.</p>
-    <div class="ecommerce-container">
-        </div>
-        <div class="cart">
-            <h3>BOOKS</h3>
-            <ul id="cart-items" class="cart-items"></ul>
-            <img src="images/books.jpg" style="width:20%; height:90px; vertical-align:left;">
-            <div class="cart-total">
-                Total: $<span id="cart-total">400.00</span>
-            </div>
-            <button id="checkout-btn" disabled>Checkout</button>
-
-                <h3>PEN</h3>
-                <ul id="cart-items" class="cart-items"></ul>
-                <img src="images/pen.jpg" style="width:20%; height:90px; vertical-align:left;">
-                <div class="cart-total">
-                    Total: $<span id="cart-total">10.00</span>
-                </div>
-                <button id="checkout-btn" disabled>Checkout</button>
-
-                    <h3>PENCIL</h3>
-                    <ul id="cart-items" class="cart-items"></ul>
-                    <img src="images/pencil.jpg" style="width:20%; height:90px; vertical-align:left;">
-                    <div class="cart-total">
-                        Total: $<span id="cart-total">10.00</span>
-                    </div>
-                    <button id="checkout-btn" disabled>Checkout</button>
-
-                        <h3>LKG</h3>
-                        <ul id="cart-items" class="cart-items"></ul>   
-                        <img src="images/lkg.jpg" style="width:20%; height:90px; vertical-align:left;">
-                        <div class="cart-total">
-                            Total: $<span id="cart-total">250.00</span>
-                        </div>
-                        <button id="checkout-btn" disabled>Checkout</button>
-
-                            <h3>SHARPENER</h3>
-                             <ul id="cart-items" class="cart-items"></ul>
-                            <img src="images/sharpener.jpg" style="width:20%; height:90px; vertical-align:left;">
-                            <div class="cart-total">
-                                 Total: $<span id="cart-total">5.00</span>
-                            </div>
-                            <button id="checkout-btn" disabled>Checkout</button>
-
-                                <h3>ERACER</h3>
-                                <ul id="cart-items" class="cart-items"></ul>
-                                <img src="images/eracer.jpg" style="width:20%; height:90px; vertical-align:left;">
-                                <div class="cart-total">
-                                    Total: $<span id="cart-total">5.00</span>
-                                </div>
-                                <button id="checkout-btn" disabled>Checkout</button>
-
-                                    <h3>STATIONERIES</h3>
-                                    <ul id="cart-items" class="cart-items"></ul> 
-                                    <img src="images/stationeries.jpg" style="width:20%; height:90px; vertical-align:left;">
-                                    <div class="cart-total">
-                                         Total: $<span id="cart-total">800.00</span>
-                                    </div>
-                                    <button id="checkout-btn" disabled>Checkout</button>
-                                </div>
-                            </div>
-                        </section>
-                                </main>
-                            </div>
-                            <script src="script.js"></script>
-                        </body>
-                        </html>
+    <script src="script.js"></script>
+</body>
+</html>
